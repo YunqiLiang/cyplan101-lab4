@@ -1,0 +1,3404 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cfbe5e2f2ad8d2e7aad8507a100c9089 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cfbe5e2f2ad8d2e7aad8507a100c9089" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cfbe5e2f2ad8d2e7aad8507a100c9089 = L.map(
+                "map_cfbe5e2f2ad8d2e7aad8507a100c9089",
+                {
+                    center: [37.5, -119.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4b7f133b3ad90b3d550587e2833f2b09 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4b7f133b3ad90b3d550587e2833f2b09.addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+            var circle_marker_5a9871cb2434eec9fa0a94bf6ff467df = L.circleMarker(
+                [34.060695998901885, -117.9637150001541],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.12, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_8e157f029a10a5d2f49908e12ad880ac = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_67477a4e7cde0b7332dd97a6d886767d = $(`<div id="html_67477a4e7cde0b7332dd97a6d886767d" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 91746.0<br><b>Total Units:</b> 89</div>`)[0];
+                popup_8e157f029a10a5d2f49908e12ad880ac.setContent(html_67477a4e7cde0b7332dd97a6d886767d);
+            
+        
+
+        circle_marker_5a9871cb2434eec9fa0a94bf6ff467df.bindPopup(popup_8e157f029a10a5d2f49908e12ad880ac)
+        ;
+
+        
+    
+    
+            circle_marker_5a9871cb2434eec9fa0a94bf6ff467df.bindTooltip(
+                `<div>
+                     Los Angeles               — 89 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_052978a9c60a29be64257a9b6a5e5a68 = L.circleMarker(
+                [38.5765729992087, -121.48341899994703],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.4, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_df6a8daf6ef14a7fe13f187417ad99b9 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_96dae1b44db32baf59c28c8194bd384d = $(`<div id="html_96dae1b44db32baf59c28c8194bd384d" style="width: 100.0%; height: 100.0%;"><b>County:</b> Sacramento               <br><b>ZIP:</b> 95811.0<br><b>Total Units:</b> 80</div>`)[0];
+                popup_df6a8daf6ef14a7fe13f187417ad99b9.setContent(html_96dae1b44db32baf59c28c8194bd384d);
+            
+        
+
+        circle_marker_052978a9c60a29be64257a9b6a5e5a68.bindPopup(popup_df6a8daf6ef14a7fe13f187417ad99b9)
+        ;
+
+        
+    
+    
+            circle_marker_052978a9c60a29be64257a9b6a5e5a68.bindTooltip(
+                `<div>
+                     Sacramento                — 80 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dc11ab88321eed33cdb8ed20f7deb0be = L.circleMarker(
+                [33.84783399877636, -118.18222499985549],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.16, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_445ac69b683a0c64b65401a4143302df = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_449ffb79bfa2fab9aa1dada30beddaf9 = $(`<div id="html_449ffb79bfa2fab9aa1dada30beddaf9" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90805.0<br><b>Total Units:</b> 77</div>`)[0];
+                popup_445ac69b683a0c64b65401a4143302df.setContent(html_449ffb79bfa2fab9aa1dada30beddaf9);
+            
+        
+
+        circle_marker_dc11ab88321eed33cdb8ed20f7deb0be.bindPopup(popup_445ac69b683a0c64b65401a4143302df)
+        ;
+
+        
+    
+    
+            circle_marker_dc11ab88321eed33cdb8ed20f7deb0be.bindTooltip(
+                `<div>
+                     Los Angeles               — 77 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e11c3bb95a444f7af9f0e60bbf7b1916 = L.circleMarker(
+                [33.77353599904453, -118.27514199962158],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.48, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_12d1513aa23d25a23ec0e5c26856ccaf = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_89bb597d1b89f2da02b2c6b52c4f5b04 = $(`<div id="html_89bb597d1b89f2da02b2c6b52c4f5b04" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90744.0<br><b>Total Units:</b> 56</div>`)[0];
+                popup_12d1513aa23d25a23ec0e5c26856ccaf.setContent(html_89bb597d1b89f2da02b2c6b52c4f5b04);
+            
+        
+
+        circle_marker_e11c3bb95a444f7af9f0e60bbf7b1916.bindPopup(popup_12d1513aa23d25a23ec0e5c26856ccaf)
+        ;
+
+        
+    
+    
+            circle_marker_e11c3bb95a444f7af9f0e60bbf7b1916.bindTooltip(
+                `<div>
+                     Los Angeles               — 56 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_37f36dae781a1a66386dbe72bc8c4f3e = L.circleMarker(
+                [34.39040099904024, -118.54664200006738],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.32, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_0bcb28a72528f939475bf317f8816cbe = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_798f6aee69ffa0a425d91cb9af4d7c66 = $(`<div id="html_798f6aee69ffa0a425d91cb9af4d7c66" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 91355.0<br><b>Total Units:</b> 54</div>`)[0];
+                popup_0bcb28a72528f939475bf317f8816cbe.setContent(html_798f6aee69ffa0a425d91cb9af4d7c66);
+            
+        
+
+        circle_marker_37f36dae781a1a66386dbe72bc8c4f3e.bindPopup(popup_0bcb28a72528f939475bf317f8816cbe)
+        ;
+
+        
+    
+    
+            circle_marker_37f36dae781a1a66386dbe72bc8c4f3e.bindTooltip(
+                `<div>
+                     Los Angeles               — 54 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dd4e1768621b265b38bc1b3d08dc8ece = L.circleMarker(
+                [34.19868499912489, -119.18131000022203],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_3c6ac710d6bb84e9d2d8e19857b16049 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_f1f628ab5e3c84eed11749cc3c3f87e5 = $(`<div id="html_f1f628ab5e3c84eed11749cc3c3f87e5" style="width: 100.0%; height: 100.0%;"><b>County:</b> Ventura                  <br><b>ZIP:</b> 93030.0<br><b>Total Units:</b> 50</div>`)[0];
+                popup_3c6ac710d6bb84e9d2d8e19857b16049.setContent(html_f1f628ab5e3c84eed11749cc3c3f87e5);
+            
+        
+
+        circle_marker_dd4e1768621b265b38bc1b3d08dc8ece.bindPopup(popup_3c6ac710d6bb84e9d2d8e19857b16049)
+        ;
+
+        
+    
+    
+            circle_marker_dd4e1768621b265b38bc1b3d08dc8ece.bindTooltip(
+                `<div>
+                     Ventura                   — 50 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c9e9c14f9d8ba65d1235746f3a9b7f11 = L.circleMarker(
+                [33.964942998843085, -118.07012199964348],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.92, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_8b11c407be8a56e13a054e778a9878cb = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_3cd7314b2790b069d58af7f649cb4761 = $(`<div id="html_3cd7314b2790b069d58af7f649cb4761" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90606.0<br><b>Total Units:</b> 49</div>`)[0];
+                popup_8b11c407be8a56e13a054e778a9878cb.setContent(html_3cd7314b2790b069d58af7f649cb4761);
+            
+        
+
+        circle_marker_c9e9c14f9d8ba65d1235746f3a9b7f11.bindPopup(popup_8b11c407be8a56e13a054e778a9878cb)
+        ;
+
+        
+    
+    
+            circle_marker_c9e9c14f9d8ba65d1235746f3a9b7f11.bindTooltip(
+                `<div>
+                     Los Angeles               — 49 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c091af31837045212bc8f8ae5514f612 = L.circleMarker(
+                [34.035159998931206, -118.18300800020322],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.68, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_0dc54277e7acbae9e1bae92e3cb60e53 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_1c1a733a76a87e741ee6f4bc9628a0c5 = $(`<div id="html_1c1a733a76a87e741ee6f4bc9628a0c5" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90063.0<br><b>Total Units:</b> 46</div>`)[0];
+                popup_0dc54277e7acbae9e1bae92e3cb60e53.setContent(html_1c1a733a76a87e741ee6f4bc9628a0c5);
+            
+        
+
+        circle_marker_c091af31837045212bc8f8ae5514f612.bindPopup(popup_0dc54277e7acbae9e1bae92e3cb60e53)
+        ;
+
+        
+    
+    
+            circle_marker_c091af31837045212bc8f8ae5514f612.bindTooltip(
+                `<div>
+                     Los Angeles               — 46 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d7e15a232e60739682c9ef3689502a25 = L.circleMarker(
+                [34.042914999378475, -118.1598649999825],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_97a125128786b74bb0f9482d5f38df29 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_b14f5d69feae855f513bb51bb5b5b08a = $(`<div id="html_b14f5d69feae855f513bb51bb5b5b08a" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90022.0<br><b>Total Units:</b> 37</div>`)[0];
+                popup_97a125128786b74bb0f9482d5f38df29.setContent(html_b14f5d69feae855f513bb51bb5b5b08a);
+            
+        
+
+        circle_marker_d7e15a232e60739682c9ef3689502a25.bindPopup(popup_97a125128786b74bb0f9482d5f38df29)
+        ;
+
+        
+    
+    
+            circle_marker_d7e15a232e60739682c9ef3689502a25.bindTooltip(
+                `<div>
+                     Los Angeles               — 37 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_19fe4548fdbcd8ccf5c787578248be60 = L.circleMarker(
+                [37.80480299899391, -122.41388300011346],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_be931e1582b3a22e9113811f1b28de45 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_5dde769e47abe7a582a6c1f7396f790e = $(`<div id="html_5dde769e47abe7a582a6c1f7396f790e" style="width: 100.0%; height: 100.0%;"><b>County:</b> San Francisco            <br><b>ZIP:</b> 94133.0<br><b>Total Units:</b> 26</div>`)[0];
+                popup_be931e1582b3a22e9113811f1b28de45.setContent(html_5dde769e47abe7a582a6c1f7396f790e);
+            
+        
+
+        circle_marker_19fe4548fdbcd8ccf5c787578248be60.bindPopup(popup_be931e1582b3a22e9113811f1b28de45)
+        ;
+
+        
+    
+    
+            circle_marker_19fe4548fdbcd8ccf5c787578248be60.bindTooltip(
+                `<div>
+                     San Francisco             — 26 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_39f215849a3f832168918b93c4171474 = L.circleMarker(
+                [37.86798399936301, -122.50912999975786],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_6c8765d297e023e1cd590804dde1a4c9 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_f75332cd9cbb85156f675e6fa636ab8b = $(`<div id="html_f75332cd9cbb85156f675e6fa636ab8b" style="width: 100.0%; height: 100.0%;"><b>County:</b> Marin                    <br><b>ZIP:</b> 94965.0<br><b>Total Units:</b> 21</div>`)[0];
+                popup_6c8765d297e023e1cd590804dde1a4c9.setContent(html_f75332cd9cbb85156f675e6fa636ab8b);
+            
+        
+
+        circle_marker_39f215849a3f832168918b93c4171474.bindPopup(popup_6c8765d297e023e1cd590804dde1a4c9)
+        ;
+
+        
+    
+    
+            circle_marker_39f215849a3f832168918b93c4171474.bindTooltip(
+                `<div>
+                     Marin                     — 21 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1c12a7415715f61a9ad4af036e0722e3 = L.circleMarker(
+                [34.063017999189405, -118.2285499997567],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_58ff0c2f87b52a2780d558b0e4c53d53 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_fe5488afdbee3a36add09f1427f80fee = $(`<div id="html_fe5488afdbee3a36add09f1427f80fee" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90012.0<br><b>Total Units:</b> 21</div>`)[0];
+                popup_58ff0c2f87b52a2780d558b0e4c53d53.setContent(html_fe5488afdbee3a36add09f1427f80fee);
+            
+        
+
+        circle_marker_1c12a7415715f61a9ad4af036e0722e3.bindPopup(popup_58ff0c2f87b52a2780d558b0e4c53d53)
+        ;
+
+        
+    
+    
+            circle_marker_1c12a7415715f61a9ad4af036e0722e3.bindTooltip(
+                `<div>
+                     Los Angeles               — 21 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_03afb8f299b83926cd3d04cc322797c6 = L.circleMarker(
+                [37.80456599908923, -122.41574000016375],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_0ea8381c64cb5f1e12a8a6b47c02fdc0 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_e3da12b68234c6465a26c0bdf7edc867 = $(`<div id="html_e3da12b68234c6465a26c0bdf7edc867" style="width: 100.0%; height: 100.0%;"><b>County:</b> San Francisco            <br><b>ZIP:</b> 94133.0<br><b>Total Units:</b> 20</div>`)[0];
+                popup_0ea8381c64cb5f1e12a8a6b47c02fdc0.setContent(html_e3da12b68234c6465a26c0bdf7edc867);
+            
+        
+
+        circle_marker_03afb8f299b83926cd3d04cc322797c6.bindPopup(popup_0ea8381c64cb5f1e12a8a6b47c02fdc0)
+        ;
+
+        
+    
+    
+            circle_marker_03afb8f299b83926cd3d04cc322797c6.bindTooltip(
+                `<div>
+                     San Francisco             — 20 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_373d587625832606c4e0f855bb96e1c4 = L.circleMarker(
+                [34.06438299908312, -118.23073499987004],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_ea0035cc6b9c1082a2d0d89ef5f2b7e3 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_9ecb1808a22b4143a573ddde21b06a88 = $(`<div id="html_9ecb1808a22b4143a573ddde21b06a88" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90012.0<br><b>Total Units:</b> 20</div>`)[0];
+                popup_ea0035cc6b9c1082a2d0d89ef5f2b7e3.setContent(html_9ecb1808a22b4143a573ddde21b06a88);
+            
+        
+
+        circle_marker_373d587625832606c4e0f855bb96e1c4.bindPopup(popup_ea0035cc6b9c1082a2d0d89ef5f2b7e3)
+        ;
+
+        
+    
+    
+            circle_marker_373d587625832606c4e0f855bb96e1c4.bindTooltip(
+                `<div>
+                     Los Angeles               — 20 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3dcfa42ac9ba0bcfd8c92120aa882d53 = L.circleMarker(
+                [34.064673998930466, -118.22996800031413],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_e92deaec561016f161730df5d88b9096 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_1bcadc962391069c7ec9c7c260fca2a1 = $(`<div id="html_1bcadc962391069c7ec9c7c260fca2a1" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90012.0<br><b>Total Units:</b> 19</div>`)[0];
+                popup_e92deaec561016f161730df5d88b9096.setContent(html_1bcadc962391069c7ec9c7c260fca2a1);
+            
+        
+
+        circle_marker_3dcfa42ac9ba0bcfd8c92120aa882d53.bindPopup(popup_e92deaec561016f161730df5d88b9096)
+        ;
+
+        
+    
+    
+            circle_marker_3dcfa42ac9ba0bcfd8c92120aa882d53.bindTooltip(
+                `<div>
+                     Los Angeles               — 19 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fdc9085df085e697971bd550cc8eab93 = L.circleMarker(
+                [36.771087998836634, -119.77725300020573],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_c7aae542bae60bc175cb276b42523189 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_ff0c7b9c0ddad3a7c8851439c2e48a1f = $(`<div id="html_ff0c7b9c0ddad3a7c8851439c2e48a1f" style="width: 100.0%; height: 100.0%;"><b>County:</b> Fresno                   <br><b>ZIP:</b> 93703.0<br><b>Total Units:</b> 18</div>`)[0];
+                popup_c7aae542bae60bc175cb276b42523189.setContent(html_ff0c7b9c0ddad3a7c8851439c2e48a1f);
+            
+        
+
+        circle_marker_fdc9085df085e697971bd550cc8eab93.bindPopup(popup_c7aae542bae60bc175cb276b42523189)
+        ;
+
+        
+    
+    
+            circle_marker_fdc9085df085e697971bd550cc8eab93.bindTooltip(
+                `<div>
+                     Fresno                    — 18 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5563ec156e88c1b423271894b92c1a45 = L.circleMarker(
+                [37.757193999086844, -122.19987900018286],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_5fa8ddeaf2117202f4c945d42c3e1659 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_63f92b4c4431b63c0ebd6c7c54430b0f = $(`<div id="html_63f92b4c4431b63c0ebd6c7c54430b0f" style="width: 100.0%; height: 100.0%;"><b>County:</b> Alameda                  <br><b>ZIP:</b> 94621.0<br><b>Total Units:</b> 18</div>`)[0];
+                popup_5fa8ddeaf2117202f4c945d42c3e1659.setContent(html_63f92b4c4431b63c0ebd6c7c54430b0f);
+            
+        
+
+        circle_marker_5563ec156e88c1b423271894b92c1a45.bindPopup(popup_5fa8ddeaf2117202f4c945d42c3e1659)
+        ;
+
+        
+    
+    
+            circle_marker_5563ec156e88c1b423271894b92c1a45.bindTooltip(
+                `<div>
+                     Alameda                   — 18 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_90d17afd30366e41de6c1f47175c3085 = L.circleMarker(
+                [36.770013999169024, -119.78175499977856],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_c85d048d33f88fc0e5eed8b2d4e1d5e1 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_67aa3c7e21f1536f5dfe2d361361e615 = $(`<div id="html_67aa3c7e21f1536f5dfe2d361361e615" style="width: 100.0%; height: 100.0%;"><b>County:</b> Fresno                   <br><b>ZIP:</b> 93703.0<br><b>Total Units:</b> 18</div>`)[0];
+                popup_c85d048d33f88fc0e5eed8b2d4e1d5e1.setContent(html_67aa3c7e21f1536f5dfe2d361361e615);
+            
+        
+
+        circle_marker_90d17afd30366e41de6c1f47175c3085.bindPopup(popup_c85d048d33f88fc0e5eed8b2d4e1d5e1)
+        ;
+
+        
+    
+    
+            circle_marker_90d17afd30366e41de6c1f47175c3085.bindTooltip(
+                `<div>
+                     Fresno                    — 18 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_435e4f7306a5e7ead7dc3e11b5e6bf4a = L.circleMarker(
+                [33.774171999265995, -118.27519699987317],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_b467037fb7bc332271a32d85b0506f40 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_5419085c2f0837b62ba0465d97b700c8 = $(`<div id="html_5419085c2f0837b62ba0465d97b700c8" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90744.0<br><b>Total Units:</b> 16</div>`)[0];
+                popup_b467037fb7bc332271a32d85b0506f40.setContent(html_5419085c2f0837b62ba0465d97b700c8);
+            
+        
+
+        circle_marker_435e4f7306a5e7ead7dc3e11b5e6bf4a.bindPopup(popup_b467037fb7bc332271a32d85b0506f40)
+        ;
+
+        
+    
+    
+            circle_marker_435e4f7306a5e7ead7dc3e11b5e6bf4a.bindTooltip(
+                `<div>
+                     Los Angeles               — 16 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f29f45dde40a4ce5a24c4df3bf135a33 = L.circleMarker(
+                [37.781768999354355, -122.42836299987373],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_2225ac62c5f715588dc1b6eab1a01eb7 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_f935a71c3338dc768c3460351c7339f3 = $(`<div id="html_f935a71c3338dc768c3460351c7339f3" style="width: 100.0%; height: 100.0%;"><b>County:</b> San Francisco            <br><b>ZIP:</b> 94115.0<br><b>Total Units:</b> 15</div>`)[0];
+                popup_2225ac62c5f715588dc1b6eab1a01eb7.setContent(html_f935a71c3338dc768c3460351c7339f3);
+            
+        
+
+        circle_marker_f29f45dde40a4ce5a24c4df3bf135a33.bindPopup(popup_2225ac62c5f715588dc1b6eab1a01eb7)
+        ;
+
+        
+    
+    
+            circle_marker_f29f45dde40a4ce5a24c4df3bf135a33.bindTooltip(
+                `<div>
+                     San Francisco             — 15 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_356aadc60af124b3d58dd88c2ae1903e = L.circleMarker(
+                [33.93066199928198, -118.23577200009348],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_c77371070363dab8e6df8c0b06a85651 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_2ac8eaaedaf7e30c4055e5bf74b607c8 = $(`<div id="html_2ac8eaaedaf7e30c4055e5bf74b607c8" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90059.0<br><b>Total Units:</b> 12</div>`)[0];
+                popup_c77371070363dab8e6df8c0b06a85651.setContent(html_2ac8eaaedaf7e30c4055e5bf74b607c8);
+            
+        
+
+        circle_marker_356aadc60af124b3d58dd88c2ae1903e.bindPopup(popup_c77371070363dab8e6df8c0b06a85651)
+        ;
+
+        
+    
+    
+            circle_marker_356aadc60af124b3d58dd88c2ae1903e.bindTooltip(
+                `<div>
+                     Los Angeles               — 12 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d17b56ee03f24a83ee5d1d5b7b587533 = L.circleMarker(
+                [34.26663899944485, -118.41580199984632],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_6272589957de617374a8b9d3e3e2453d = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_1157dbd0ffa0900f0b82a71cee0a34a0 = $(`<div id="html_1157dbd0ffa0900f0b82a71cee0a34a0" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 91331.0<br><b>Total Units:</b> 12</div>`)[0];
+                popup_6272589957de617374a8b9d3e3e2453d.setContent(html_1157dbd0ffa0900f0b82a71cee0a34a0);
+            
+        
+
+        circle_marker_d17b56ee03f24a83ee5d1d5b7b587533.bindPopup(popup_6272589957de617374a8b9d3e3e2453d)
+        ;
+
+        
+    
+    
+            circle_marker_d17b56ee03f24a83ee5d1d5b7b587533.bindTooltip(
+                `<div>
+                     Los Angeles               — 12 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_63d75b025c50c4786f900b32668971ef = L.circleMarker(
+                [37.80643699892805, -122.29156599971246],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_1f3acbf59bd62f3176b60800ba93013f = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_09609f5a4994a9be10e96614e5a012c9 = $(`<div id="html_09609f5a4994a9be10e96614e5a012c9" style="width: 100.0%; height: 100.0%;"><b>County:</b> Alameda                  <br><b>ZIP:</b> 94607.0<br><b>Total Units:</b> 12</div>`)[0];
+                popup_1f3acbf59bd62f3176b60800ba93013f.setContent(html_09609f5a4994a9be10e96614e5a012c9);
+            
+        
+
+        circle_marker_63d75b025c50c4786f900b32668971ef.bindPopup(popup_1f3acbf59bd62f3176b60800ba93013f)
+        ;
+
+        
+    
+    
+            circle_marker_63d75b025c50c4786f900b32668971ef.bindTooltip(
+                `<div>
+                     Alameda                   — 12 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aa05d925d4f17947aac1111a4c55d984 = L.circleMarker(
+                [37.807837998896865, -122.29880200029297],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_5290ccea8488f35f5535e6df6f30ec34 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_75e1c5cff562519503824ee95739dd0c = $(`<div id="html_75e1c5cff562519503824ee95739dd0c" style="width: 100.0%; height: 100.0%;"><b>County:</b> Alameda                  <br><b>ZIP:</b> 94607.0<br><b>Total Units:</b> 12</div>`)[0];
+                popup_5290ccea8488f35f5535e6df6f30ec34.setContent(html_75e1c5cff562519503824ee95739dd0c);
+            
+        
+
+        circle_marker_aa05d925d4f17947aac1111a4c55d984.bindPopup(popup_5290ccea8488f35f5535e6df6f30ec34)
+        ;
+
+        
+    
+    
+            circle_marker_aa05d925d4f17947aac1111a4c55d984.bindTooltip(
+                `<div>
+                     Alameda                   — 12 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4955c5aa04cbbfdad811bca1e3f2013b = L.circleMarker(
+                [34.002335999449166, -118.48425399999202],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_817227e32af46e6c0ce489cfedd2a7b6 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_fc15dd746a8be178ce7fa7f265ce6ef4 = $(`<div id="html_fc15dd746a8be178ce7fa7f265ce6ef4" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90405.0<br><b>Total Units:</b> 12</div>`)[0];
+                popup_817227e32af46e6c0ce489cfedd2a7b6.setContent(html_fc15dd746a8be178ce7fa7f265ce6ef4);
+            
+        
+
+        circle_marker_4955c5aa04cbbfdad811bca1e3f2013b.bindPopup(popup_817227e32af46e6c0ce489cfedd2a7b6)
+        ;
+
+        
+    
+    
+            circle_marker_4955c5aa04cbbfdad811bca1e3f2013b.bindTooltip(
+                `<div>
+                     Los Angeles               — 12 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_18b283e6253083bea924887b5061cb0a = L.circleMarker(
+                [33.9915729989243, -118.41219900007384],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_71fcc347729dac64b5a5afd3954e982e = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_832d31facb5bb61bca366e40545b3567 = $(`<div id="html_832d31facb5bb61bca366e40545b3567" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90230.0<br><b>Total Units:</b> 12</div>`)[0];
+                popup_71fcc347729dac64b5a5afd3954e982e.setContent(html_832d31facb5bb61bca366e40545b3567);
+            
+        
+
+        circle_marker_18b283e6253083bea924887b5061cb0a.bindPopup(popup_71fcc347729dac64b5a5afd3954e982e)
+        ;
+
+        
+    
+    
+            circle_marker_18b283e6253083bea924887b5061cb0a.bindTooltip(
+                `<div>
+                     Los Angeles               — 12 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_954131e5e93b9c14af91cf01a72c6c05 = L.circleMarker(
+                [34.26632999926387, -118.41483799974861],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_b4bbe7fd5738911577ce916778ae8c30 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_fc9fb7ca28812b6ca082cea281ad0637 = $(`<div id="html_fc9fb7ca28812b6ca082cea281ad0637" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 91331.0<br><b>Total Units:</b> 12</div>`)[0];
+                popup_b4bbe7fd5738911577ce916778ae8c30.setContent(html_fc9fb7ca28812b6ca082cea281ad0637);
+            
+        
+
+        circle_marker_954131e5e93b9c14af91cf01a72c6c05.bindPopup(popup_b4bbe7fd5738911577ce916778ae8c30)
+        ;
+
+        
+    
+    
+            circle_marker_954131e5e93b9c14af91cf01a72c6c05.bindTooltip(
+                `<div>
+                     Los Angeles               — 12 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a47c3527942545b9d7f59d29a6d77c25 = L.circleMarker(
+                [38.55786699934363, -121.51138599995589],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_c764ee090bacfaee8b239ea930ac120c = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_87bd956bd10c98970cd7e1b74689ef7f = $(`<div id="html_87bd956bd10c98970cd7e1b74689ef7f" style="width: 100.0%; height: 100.0%;"><b>County:</b> Sacramento               <br><b>ZIP:</b> 95818.0<br><b>Total Units:</b> 12</div>`)[0];
+                popup_c764ee090bacfaee8b239ea930ac120c.setContent(html_87bd956bd10c98970cd7e1b74689ef7f);
+            
+        
+
+        circle_marker_a47c3527942545b9d7f59d29a6d77c25.bindPopup(popup_c764ee090bacfaee8b239ea930ac120c)
+        ;
+
+        
+    
+    
+            circle_marker_a47c3527942545b9d7f59d29a6d77c25.bindTooltip(
+                `<div>
+                     Sacramento                — 12 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8897f2c2bbe251f6ca4a1d087a070857 = L.circleMarker(
+                [33.93131399880158, -118.23464800016221],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_b750d18a733e42b6aefc14af3650036a = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_ee7ee6226bb19713097cabb1e1d8fe1b = $(`<div id="html_ee7ee6226bb19713097cabb1e1d8fe1b" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90059.0<br><b>Total Units:</b> 12</div>`)[0];
+                popup_b750d18a733e42b6aefc14af3650036a.setContent(html_ee7ee6226bb19713097cabb1e1d8fe1b);
+            
+        
+
+        circle_marker_8897f2c2bbe251f6ca4a1d087a070857.bindPopup(popup_b750d18a733e42b6aefc14af3650036a)
+        ;
+
+        
+    
+    
+            circle_marker_8897f2c2bbe251f6ca4a1d087a070857.bindTooltip(
+                `<div>
+                     Los Angeles               — 12 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7a70a6d0cc0ed5c2df0b06197eb62ac0 = L.circleMarker(
+                [33.8501739989103, -118.1794449997154],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_eaa7159de2ac96d101c66012e4002aa5 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_23dacb57b27d24e01402f9b5644b161d = $(`<div id="html_23dacb57b27d24e01402f9b5644b161d" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90805.0<br><b>Total Units:</b> 11</div>`)[0];
+                popup_eaa7159de2ac96d101c66012e4002aa5.setContent(html_23dacb57b27d24e01402f9b5644b161d);
+            
+        
+
+        circle_marker_7a70a6d0cc0ed5c2df0b06197eb62ac0.bindPopup(popup_eaa7159de2ac96d101c66012e4002aa5)
+        ;
+
+        
+    
+    
+            circle_marker_7a70a6d0cc0ed5c2df0b06197eb62ac0.bindTooltip(
+                `<div>
+                     Los Angeles               — 11 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4b38eeeb2924356907fe6f75466a625d = L.circleMarker(
+                [33.91644499914515, -118.2379489998109],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_c88d88c5ad93798607fa90b78ad7b8d9 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_4904d08e20135ef1e66b54723f4ea9e8 = $(`<div id="html_4904d08e20135ef1e66b54723f4ea9e8" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90222.0<br><b>Total Units:</b> 10</div>`)[0];
+                popup_c88d88c5ad93798607fa90b78ad7b8d9.setContent(html_4904d08e20135ef1e66b54723f4ea9e8);
+            
+        
+
+        circle_marker_4b38eeeb2924356907fe6f75466a625d.bindPopup(popup_c88d88c5ad93798607fa90b78ad7b8d9)
+        ;
+
+        
+    
+    
+            circle_marker_4b38eeeb2924356907fe6f75466a625d.bindTooltip(
+                `<div>
+                     Los Angeles               — 10 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b88220e4cc2dfda1295b164efe27f5c7 = L.circleMarker(
+                [37.806046999313935, -122.29171499967539],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_4b4b2506a62a32205c166d8c551cc581 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_a09c6b6de5de113e0c40b07a8280eae4 = $(`<div id="html_a09c6b6de5de113e0c40b07a8280eae4" style="width: 100.0%; height: 100.0%;"><b>County:</b> Alameda                  <br><b>ZIP:</b> 94607.0<br><b>Total Units:</b> 10</div>`)[0];
+                popup_4b4b2506a62a32205c166d8c551cc581.setContent(html_a09c6b6de5de113e0c40b07a8280eae4);
+            
+        
+
+        circle_marker_b88220e4cc2dfda1295b164efe27f5c7.bindPopup(popup_4b4b2506a62a32205c166d8c551cc581)
+        ;
+
+        
+    
+    
+            circle_marker_b88220e4cc2dfda1295b164efe27f5c7.bindTooltip(
+                `<div>
+                     Alameda                   — 10 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_132183b515cc21a54f2a31ae34ae00d8 = L.circleMarker(
+                [34.04282799920389, -118.22351699973122],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_c361b186db196c69366afdc496d37756 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_ac6be9549761a6a300a41b1f0b2925f4 = $(`<div id="html_ac6be9549761a6a300a41b1f0b2925f4" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90033.0<br><b>Total Units:</b> 10</div>`)[0];
+                popup_c361b186db196c69366afdc496d37756.setContent(html_ac6be9549761a6a300a41b1f0b2925f4);
+            
+        
+
+        circle_marker_132183b515cc21a54f2a31ae34ae00d8.bindPopup(popup_c361b186db196c69366afdc496d37756)
+        ;
+
+        
+    
+    
+            circle_marker_132183b515cc21a54f2a31ae34ae00d8.bindTooltip(
+                `<div>
+                     Los Angeles               — 10 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_367f976a5ad41ed0b3376a539943a2b7 = L.circleMarker(
+                [33.99321699911976, -118.40970400033912],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_f523564017a0b0e323080d99b5210ae3 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_3024165215c5c79f49266f748fa4ace5 = $(`<div id="html_3024165215c5c79f49266f748fa4ace5" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90230.0<br><b>Total Units:</b> 10</div>`)[0];
+                popup_f523564017a0b0e323080d99b5210ae3.setContent(html_3024165215c5c79f49266f748fa4ace5);
+            
+        
+
+        circle_marker_367f976a5ad41ed0b3376a539943a2b7.bindPopup(popup_f523564017a0b0e323080d99b5210ae3)
+        ;
+
+        
+    
+    
+            circle_marker_367f976a5ad41ed0b3376a539943a2b7.bindTooltip(
+                `<div>
+                     Los Angeles               — 10 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_57c99ba3c79a764a60a29c15b7b1f3a9 = L.circleMarker(
+                [37.76106399880747, -122.19525000038841],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_2fae67de891b99971424972e285c099d = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_a6cc63fbf247bee6f2ebe8affba59779 = $(`<div id="html_a6cc63fbf247bee6f2ebe8affba59779" style="width: 100.0%; height: 100.0%;"><b>County:</b> Alameda                  <br><b>ZIP:</b> 94621.0<br><b>Total Units:</b> 10</div>`)[0];
+                popup_2fae67de891b99971424972e285c099d.setContent(html_a6cc63fbf247bee6f2ebe8affba59779);
+            
+        
+
+        circle_marker_57c99ba3c79a764a60a29c15b7b1f3a9.bindPopup(popup_2fae67de891b99971424972e285c099d)
+        ;
+
+        
+    
+    
+            circle_marker_57c99ba3c79a764a60a29c15b7b1f3a9.bindTooltip(
+                `<div>
+                     Alameda                   — 10 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_87db5cc6926fe45308ee7724fdcfd113 = L.circleMarker(
+                [33.994789999417506, -118.4121739999595],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_8984b9a5f3c0eb23733c5a5e7563a5e1 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_9b46da539a8833550e15025ca2ed1581 = $(`<div id="html_9b46da539a8833550e15025ca2ed1581" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90230.0<br><b>Total Units:</b> 10</div>`)[0];
+                popup_8984b9a5f3c0eb23733c5a5e7563a5e1.setContent(html_9b46da539a8833550e15025ca2ed1581);
+            
+        
+
+        circle_marker_87db5cc6926fe45308ee7724fdcfd113.bindPopup(popup_8984b9a5f3c0eb23733c5a5e7563a5e1)
+        ;
+
+        
+    
+    
+            circle_marker_87db5cc6926fe45308ee7724fdcfd113.bindTooltip(
+                `<div>
+                     Los Angeles               — 10 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1267896b665a127c732e25174ba663ab = L.circleMarker(
+                [33.991263999369004, -118.41112399964805],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_b889cf301b6503fc077ec2c97abed506 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_a65359c08fc504742d703d1fa765301e = $(`<div id="html_a65359c08fc504742d703d1fa765301e" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90230.0<br><b>Total Units:</b> 10</div>`)[0];
+                popup_b889cf301b6503fc077ec2c97abed506.setContent(html_a65359c08fc504742d703d1fa765301e);
+            
+        
+
+        circle_marker_1267896b665a127c732e25174ba663ab.bindPopup(popup_b889cf301b6503fc077ec2c97abed506)
+        ;
+
+        
+    
+    
+            circle_marker_1267896b665a127c732e25174ba663ab.bindTooltip(
+                `<div>
+                     Los Angeles               — 10 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c863e1baad4dc78f9af481a79f5f3b21 = L.circleMarker(
+                [33.85137199910561, -118.181844000089],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_2800a9187db2556022812d22a7a37f9e = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_73b50953c1ff26db7eafeac724d6f307 = $(`<div id="html_73b50953c1ff26db7eafeac724d6f307" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90805.0<br><b>Total Units:</b> 10</div>`)[0];
+                popup_2800a9187db2556022812d22a7a37f9e.setContent(html_73b50953c1ff26db7eafeac724d6f307);
+            
+        
+
+        circle_marker_c863e1baad4dc78f9af481a79f5f3b21.bindPopup(popup_2800a9187db2556022812d22a7a37f9e)
+        ;
+
+        
+    
+    
+            circle_marker_c863e1baad4dc78f9af481a79f5f3b21.bindTooltip(
+                `<div>
+                     Los Angeles               — 10 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6ea064302c986868e884400781abfa2c = L.circleMarker(
+                [37.76154899918577, -122.19451999974412],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_3d3029c3f488e8ed6022e6abe4793ab6 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_bfd9933791839dc26b7f97c32bf2e986 = $(`<div id="html_bfd9933791839dc26b7f97c32bf2e986" style="width: 100.0%; height: 100.0%;"><b>County:</b> Alameda                  <br><b>ZIP:</b> 94621.0<br><b>Total Units:</b> 10</div>`)[0];
+                popup_3d3029c3f488e8ed6022e6abe4793ab6.setContent(html_bfd9933791839dc26b7f97c32bf2e986);
+            
+        
+
+        circle_marker_6ea064302c986868e884400781abfa2c.bindPopup(popup_3d3029c3f488e8ed6022e6abe4793ab6)
+        ;
+
+        
+    
+    
+            circle_marker_6ea064302c986868e884400781abfa2c.bindTooltip(
+                `<div>
+                     Alameda                   — 10 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_00d477b570ff3c69e5421b2b4e590972 = L.circleMarker(
+                [33.744132999041234, -118.28189699997813],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_4865eb0ac111e48dbea0c07bf8881287 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_dffd81751971a0f708c02e827b5b988f = $(`<div id="html_dffd81751971a0f708c02e827b5b988f" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90731.0<br><b>Total Units:</b> 10</div>`)[0];
+                popup_4865eb0ac111e48dbea0c07bf8881287.setContent(html_dffd81751971a0f708c02e827b5b988f);
+            
+        
+
+        circle_marker_00d477b570ff3c69e5421b2b4e590972.bindPopup(popup_4865eb0ac111e48dbea0c07bf8881287)
+        ;
+
+        
+    
+    
+            circle_marker_00d477b570ff3c69e5421b2b4e590972.bindTooltip(
+                `<div>
+                     Los Angeles               — 10 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_60e2e17569c5e892bab1e2abafe68f6c = L.circleMarker(
+                [33.99192799893777, -118.40998600037142],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_03a6cc21ba61f50957f7e62dda228f61 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_0ca7f2e6d5f8631320a802196f09d4fb = $(`<div id="html_0ca7f2e6d5f8631320a802196f09d4fb" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90230.0<br><b>Total Units:</b> 10</div>`)[0];
+                popup_03a6cc21ba61f50957f7e62dda228f61.setContent(html_0ca7f2e6d5f8631320a802196f09d4fb);
+            
+        
+
+        circle_marker_60e2e17569c5e892bab1e2abafe68f6c.bindPopup(popup_03a6cc21ba61f50957f7e62dda228f61)
+        ;
+
+        
+    
+    
+            circle_marker_60e2e17569c5e892bab1e2abafe68f6c.bindTooltip(
+                `<div>
+                     Los Angeles               — 10 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9bff3b6330512355b693baab7aa8ce6f = L.circleMarker(
+                [37.80884299882449, -122.28874700011262],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_5fb010f1a1717dbea68ecd381c861bfc = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_5891b547523fda4e0bd5910a68ad1076 = $(`<div id="html_5891b547523fda4e0bd5910a68ad1076" style="width: 100.0%; height: 100.0%;"><b>County:</b> Alameda                  <br><b>ZIP:</b> 94607.0<br><b>Total Units:</b> 10</div>`)[0];
+                popup_5fb010f1a1717dbea68ecd381c861bfc.setContent(html_5891b547523fda4e0bd5910a68ad1076);
+            
+        
+
+        circle_marker_9bff3b6330512355b693baab7aa8ce6f.bindPopup(popup_5fb010f1a1717dbea68ecd381c861bfc)
+        ;
+
+        
+    
+    
+            circle_marker_9bff3b6330512355b693baab7aa8ce6f.bindTooltip(
+                `<div>
+                     Alameda                   — 10 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d1e7592394d2793debbc490e935085bb = L.circleMarker(
+                [34.26693299926938, -118.41711900012145],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_85d288ac52c30c1f1cb1dce2985a9dc6 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_fb457ad560e6329434a458a3f91ca825 = $(`<div id="html_fb457ad560e6329434a458a3f91ca825" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 91331.0<br><b>Total Units:</b> 10</div>`)[0];
+                popup_85d288ac52c30c1f1cb1dce2985a9dc6.setContent(html_fb457ad560e6329434a458a3f91ca825);
+            
+        
+
+        circle_marker_d1e7592394d2793debbc490e935085bb.bindPopup(popup_85d288ac52c30c1f1cb1dce2985a9dc6)
+        ;
+
+        
+    
+    
+            circle_marker_d1e7592394d2793debbc490e935085bb.bindTooltip(
+                `<div>
+                     Los Angeles               — 10 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f271290c639de53c85eefa3e7ad4836a = L.circleMarker(
+                [33.742156998992975, -118.28299699961995],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_08773cef0dcade328cdc6fd4e613d9a4 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_a312b40e804823c7c9dc6f85316d5e31 = $(`<div id="html_a312b40e804823c7c9dc6f85316d5e31" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90731.0<br><b>Total Units:</b> 10</div>`)[0];
+                popup_08773cef0dcade328cdc6fd4e613d9a4.setContent(html_a312b40e804823c7c9dc6f85316d5e31);
+            
+        
+
+        circle_marker_f271290c639de53c85eefa3e7ad4836a.bindPopup(popup_08773cef0dcade328cdc6fd4e613d9a4)
+        ;
+
+        
+    
+    
+            circle_marker_f271290c639de53c85eefa3e7ad4836a.bindTooltip(
+                `<div>
+                     Los Angeles               — 10 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a684c3fb5de37f933f70c1c296d44b28 = L.circleMarker(
+                [33.99215699949597, -118.40960100040695],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_9214a3a287f16db6103bce40506a744f = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_3ab7233e25ade6262d5bd23cb1e02965 = $(`<div id="html_3ab7233e25ade6262d5bd23cb1e02965" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90230.0<br><b>Total Units:</b> 10</div>`)[0];
+                popup_9214a3a287f16db6103bce40506a744f.setContent(html_3ab7233e25ade6262d5bd23cb1e02965);
+            
+        
+
+        circle_marker_a684c3fb5de37f933f70c1c296d44b28.bindPopup(popup_9214a3a287f16db6103bce40506a744f)
+        ;
+
+        
+    
+    
+            circle_marker_a684c3fb5de37f933f70c1c296d44b28.bindTooltip(
+                `<div>
+                     Los Angeles               — 10 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f948868a48209d9770b8fd20251b701b = L.circleMarker(
+                [37.80510699873149, -122.2929750000491],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_10cb5b5004db242a0b02c66b2a6381b6 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_44fd3d89719b7ff3c1041e02ded19621 = $(`<div id="html_44fd3d89719b7ff3c1041e02ded19621" style="width: 100.0%; height: 100.0%;"><b>County:</b> Alameda                  <br><b>ZIP:</b> 94607.0<br><b>Total Units:</b> 10</div>`)[0];
+                popup_10cb5b5004db242a0b02c66b2a6381b6.setContent(html_44fd3d89719b7ff3c1041e02ded19621);
+            
+        
+
+        circle_marker_f948868a48209d9770b8fd20251b701b.bindPopup(popup_10cb5b5004db242a0b02c66b2a6381b6)
+        ;
+
+        
+    
+    
+            circle_marker_f948868a48209d9770b8fd20251b701b.bindTooltip(
+                `<div>
+                     Alameda                   — 10 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cf44b5bd39b76001cec07a1c29262168 = L.circleMarker(
+                [33.99330299924845, -118.40935100016172],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_16b4a96886de22355fc94fedaa2c1da4 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_95c1fadba909305465b7b4703c309640 = $(`<div id="html_95c1fadba909305465b7b4703c309640" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90230.0<br><b>Total Units:</b> 10</div>`)[0];
+                popup_16b4a96886de22355fc94fedaa2c1da4.setContent(html_95c1fadba909305465b7b4703c309640);
+            
+        
+
+        circle_marker_cf44b5bd39b76001cec07a1c29262168.bindPopup(popup_16b4a96886de22355fc94fedaa2c1da4)
+        ;
+
+        
+    
+    
+            circle_marker_cf44b5bd39b76001cec07a1c29262168.bindTooltip(
+                `<div>
+                     Los Angeles               — 10 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f4299cef1dabb267405d84d387120a70 = L.circleMarker(
+                [37.314388999255506, -120.4727100001283],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_86ee52a88fe82dda37519bbcd53b7785 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_a130b7d201418f0dac10804d750a4185 = $(`<div id="html_a130b7d201418f0dac10804d750a4185" style="width: 100.0%; height: 100.0%;"><b>County:</b> Merced                   <br><b>ZIP:</b> 95348.0<br><b>Total Units:</b> 10</div>`)[0];
+                popup_86ee52a88fe82dda37519bbcd53b7785.setContent(html_a130b7d201418f0dac10804d750a4185);
+            
+        
+
+        circle_marker_f4299cef1dabb267405d84d387120a70.bindPopup(popup_86ee52a88fe82dda37519bbcd53b7785)
+        ;
+
+        
+    
+    
+            circle_marker_f4299cef1dabb267405d84d387120a70.bindTooltip(
+                `<div>
+                     Merced                    — 10 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f832309c1ecd8e62d7eb2150f7a5e03d = L.circleMarker(
+                [34.04073299935557, -118.22320000043712],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_5df15e45861848a2373ebd70684bbd27 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_59abb6b9427c907263c5d1701d4ecc7a = $(`<div id="html_59abb6b9427c907263c5d1701d4ecc7a" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90033.0<br><b>Total Units:</b> 10</div>`)[0];
+                popup_5df15e45861848a2373ebd70684bbd27.setContent(html_59abb6b9427c907263c5d1701d4ecc7a);
+            
+        
+
+        circle_marker_f832309c1ecd8e62d7eb2150f7a5e03d.bindPopup(popup_5df15e45861848a2373ebd70684bbd27)
+        ;
+
+        
+    
+    
+            circle_marker_f832309c1ecd8e62d7eb2150f7a5e03d.bindTooltip(
+                `<div>
+                     Los Angeles               — 10 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6be86b72cacda0ccca140265627a0425 = L.circleMarker(
+                [37.78164999892759, -122.42795699999289],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_28c01f1225636e6890c3d99b4e6b2c31 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_62520ff9837527e16e53965c8205130e = $(`<div id="html_62520ff9837527e16e53965c8205130e" style="width: 100.0%; height: 100.0%;"><b>County:</b> San Francisco            <br><b>ZIP:</b> 94115.0<br><b>Total Units:</b> 9</div>`)[0];
+                popup_28c01f1225636e6890c3d99b4e6b2c31.setContent(html_62520ff9837527e16e53965c8205130e);
+            
+        
+
+        circle_marker_6be86b72cacda0ccca140265627a0425.bindPopup(popup_28c01f1225636e6890c3d99b4e6b2c31)
+        ;
+
+        
+    
+    
+            circle_marker_6be86b72cacda0ccca140265627a0425.bindTooltip(
+                `<div>
+                     San Francisco             — 9 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_76120c9cba6537157a266d6dc7501152 = L.circleMarker(
+                [37.895773998894214, -122.53926199978855],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_db0d878fa28d514712a6ce4f0ab2b69e = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_39dc8362a7b795c6fa0cee5e5035ebab = $(`<div id="html_39dc8362a7b795c6fa0cee5e5035ebab" style="width: 100.0%; height: 100.0%;"><b>County:</b> Marin                    <br><b>ZIP:</b> 94941.0<br><b>Total Units:</b> 9</div>`)[0];
+                popup_db0d878fa28d514712a6ce4f0ab2b69e.setContent(html_39dc8362a7b795c6fa0cee5e5035ebab);
+            
+        
+
+        circle_marker_76120c9cba6537157a266d6dc7501152.bindPopup(popup_db0d878fa28d514712a6ce4f0ab2b69e)
+        ;
+
+        
+    
+    
+            circle_marker_76120c9cba6537157a266d6dc7501152.bindTooltip(
+                `<div>
+                     Marin                     — 9 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8fb8f47d5171449a0fc68c09f05b0ffb = L.circleMarker(
+                [35.3796959991865, -118.99168200022334],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_8811670a7736bf67f1f03d1e2ce5fac8 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_5fa00f3dbebde454e99085ee9f58d7c1 = $(`<div id="html_5fa00f3dbebde454e99085ee9f58d7c1" style="width: 100.0%; height: 100.0%;"><b>County:</b> Kern                     <br><b>ZIP:</b> 93305.0<br><b>Total Units:</b> 9</div>`)[0];
+                popup_8811670a7736bf67f1f03d1e2ce5fac8.setContent(html_5fa00f3dbebde454e99085ee9f58d7c1);
+            
+        
+
+        circle_marker_8fb8f47d5171449a0fc68c09f05b0ffb.bindPopup(popup_8811670a7736bf67f1f03d1e2ce5fac8)
+        ;
+
+        
+    
+    
+            circle_marker_8fb8f47d5171449a0fc68c09f05b0ffb.bindTooltip(
+                `<div>
+                     Kern                      — 9 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f64fcf2081cabeff743a862a08610b5b = L.circleMarker(
+                [33.991816999401344, -118.41193200011017],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_1430430245188003015986c455b947bb = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_3bd41076c35bf30c08ab05538fc95d23 = $(`<div id="html_3bd41076c35bf30c08ab05538fc95d23" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90230.0<br><b>Total Units:</b> 9</div>`)[0];
+                popup_1430430245188003015986c455b947bb.setContent(html_3bd41076c35bf30c08ab05538fc95d23);
+            
+        
+
+        circle_marker_f64fcf2081cabeff743a862a08610b5b.bindPopup(popup_1430430245188003015986c455b947bb)
+        ;
+
+        
+    
+    
+            circle_marker_f64fcf2081cabeff743a862a08610b5b.bindTooltip(
+                `<div>
+                     Los Angeles               — 9 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5f4e08e2f944f8368ebab12dae187c68 = L.circleMarker(
+                [33.993316999174546, -118.24093499981531],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_7fad3d9b2f098416b4d5298f2dad0514 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_e6fe4321541073cc106656f2864c15dc = $(`<div id="html_e6fe4321541073cc106656f2864c15dc" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90058.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_7fad3d9b2f098416b4d5298f2dad0514.setContent(html_e6fe4321541073cc106656f2864c15dc);
+            
+        
+
+        circle_marker_5f4e08e2f944f8368ebab12dae187c68.bindPopup(popup_7fad3d9b2f098416b4d5298f2dad0514)
+        ;
+
+        
+    
+    
+            circle_marker_5f4e08e2f944f8368ebab12dae187c68.bindTooltip(
+                `<div>
+                     Los Angeles               — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d4447aa152c4a9f7e92fdfb9ef56919c = L.circleMarker(
+                [34.05740399892619, -118.19532700013961],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_ff7bfde6c63805113fe2f858bec95072 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_cba83170a84524876eac11b7ca956bc6 = $(`<div id="html_cba83170a84524876eac11b7ca956bc6" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90033.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_ff7bfde6c63805113fe2f858bec95072.setContent(html_cba83170a84524876eac11b7ca956bc6);
+            
+        
+
+        circle_marker_d4447aa152c4a9f7e92fdfb9ef56919c.bindPopup(popup_ff7bfde6c63805113fe2f858bec95072)
+        ;
+
+        
+    
+    
+            circle_marker_d4447aa152c4a9f7e92fdfb9ef56919c.bindTooltip(
+                `<div>
+                     Los Angeles               — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7f3fbf1e2180c11c5f46ffcd5c014039 = L.circleMarker(
+                [33.93462799898456, -118.24970700005571],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_fa64bc88425a880f39cc22f8823dac55 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_5064c352a12ab80ec26ec9117891fdae = $(`<div id="html_5064c352a12ab80ec26ec9117891fdae" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90059.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_fa64bc88425a880f39cc22f8823dac55.setContent(html_5064c352a12ab80ec26ec9117891fdae);
+            
+        
+
+        circle_marker_7f3fbf1e2180c11c5f46ffcd5c014039.bindPopup(popup_fa64bc88425a880f39cc22f8823dac55)
+        ;
+
+        
+    
+    
+            circle_marker_7f3fbf1e2180c11c5f46ffcd5c014039.bindTooltip(
+                `<div>
+                     Los Angeles               — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cad4e8625463a04b2390ca255702ce92 = L.circleMarker(
+                [36.736108999240784, -119.7202110001503],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_f0ff0210d393146239700b3ee173b4c0 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_836afdc046aee3c085fd083a10caa7ea = $(`<div id="html_836afdc046aee3c085fd083a10caa7ea" style="width: 100.0%; height: 100.0%;"><b>County:</b> Fresno                   <br><b>ZIP:</b> 93727.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_f0ff0210d393146239700b3ee173b4c0.setContent(html_836afdc046aee3c085fd083a10caa7ea);
+            
+        
+
+        circle_marker_cad4e8625463a04b2390ca255702ce92.bindPopup(popup_f0ff0210d393146239700b3ee173b4c0)
+        ;
+
+        
+    
+    
+            circle_marker_cad4e8625463a04b2390ca255702ce92.bindTooltip(
+                `<div>
+                     Fresno                    — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7d9684ca194d8ff4993ed714b57b17bd = L.circleMarker(
+                [37.76016399916832, -122.19806599961517],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_8a305d701cd7bdc7ffe50e330dc61ed9 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_bab4ef75b3086c8d8a24aea2cd63ffb1 = $(`<div id="html_bab4ef75b3086c8d8a24aea2cd63ffb1" style="width: 100.0%; height: 100.0%;"><b>County:</b> Alameda                  <br><b>ZIP:</b> 94621.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_8a305d701cd7bdc7ffe50e330dc61ed9.setContent(html_bab4ef75b3086c8d8a24aea2cd63ffb1);
+            
+        
+
+        circle_marker_7d9684ca194d8ff4993ed714b57b17bd.bindPopup(popup_8a305d701cd7bdc7ffe50e330dc61ed9)
+        ;
+
+        
+    
+    
+            circle_marker_7d9684ca194d8ff4993ed714b57b17bd.bindTooltip(
+                `<div>
+                     Alameda                   — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_82aba8c676139dc9956cb9548fca7fff = L.circleMarker(
+                [38.65289399894583, -121.29017300010726],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_c518eedbbe7eb41fc2521af5bc6f5ac3 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_c334649d505850cd4102ea88e4e47544 = $(`<div id="html_c334649d505850cd4102ea88e4e47544" style="width: 100.0%; height: 100.0%;"><b>County:</b> Sacramento               <br><b>ZIP:</b> 95628.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_c518eedbbe7eb41fc2521af5bc6f5ac3.setContent(html_c334649d505850cd4102ea88e4e47544);
+            
+        
+
+        circle_marker_82aba8c676139dc9956cb9548fca7fff.bindPopup(popup_c518eedbbe7eb41fc2521af5bc6f5ac3)
+        ;
+
+        
+    
+    
+            circle_marker_82aba8c676139dc9956cb9548fca7fff.bindTooltip(
+                `<div>
+                     Sacramento                — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6c5bd459d4072af16c7af36a6661c8c0 = L.circleMarker(
+                [38.56132099931054, -121.50648199980182],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_9f455d7cda7e00b7ba4f70829496d7e5 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_4b6361022370ee48a924356badddb716 = $(`<div id="html_4b6361022370ee48a924356badddb716" style="width: 100.0%; height: 100.0%;"><b>County:</b> Sacramento               <br><b>ZIP:</b> 95818.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_9f455d7cda7e00b7ba4f70829496d7e5.setContent(html_4b6361022370ee48a924356badddb716);
+            
+        
+
+        circle_marker_6c5bd459d4072af16c7af36a6661c8c0.bindPopup(popup_9f455d7cda7e00b7ba4f70829496d7e5)
+        ;
+
+        
+    
+    
+            circle_marker_6c5bd459d4072af16c7af36a6661c8c0.bindTooltip(
+                `<div>
+                     Sacramento                — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cb92ef83541fc7688ec8d8123be8c63b = L.circleMarker(
+                [33.850928999286005, -118.1815710002775],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_bdcec8977c6e8c601f3a3cd7b6fcf872 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_6c2159efc9a38f0392ae54fd233111e5 = $(`<div id="html_6c2159efc9a38f0392ae54fd233111e5" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90805.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_bdcec8977c6e8c601f3a3cd7b6fcf872.setContent(html_6c2159efc9a38f0392ae54fd233111e5);
+            
+        
+
+        circle_marker_cb92ef83541fc7688ec8d8123be8c63b.bindPopup(popup_bdcec8977c6e8c601f3a3cd7b6fcf872)
+        ;
+
+        
+    
+    
+            circle_marker_cb92ef83541fc7688ec8d8123be8c63b.bindTooltip(
+                `<div>
+                     Los Angeles               — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8cf881a324568418f47b5f9a25bd0a73 = L.circleMarker(
+                [34.059867998814795, -118.19365800041031],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_0a9e8e4caf0ab94816e1cb1ca524ab9d = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_1701cb8832c5b83af4243ace187c0a70 = $(`<div id="html_1701cb8832c5b83af4243ace187c0a70" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90033.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_0a9e8e4caf0ab94816e1cb1ca524ab9d.setContent(html_1701cb8832c5b83af4243ace187c0a70);
+            
+        
+
+        circle_marker_8cf881a324568418f47b5f9a25bd0a73.bindPopup(popup_0a9e8e4caf0ab94816e1cb1ca524ab9d)
+        ;
+
+        
+    
+    
+            circle_marker_8cf881a324568418f47b5f9a25bd0a73.bindTooltip(
+                `<div>
+                     Los Angeles               — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5a0d044a885ebac320d2d50bb3a0576f = L.circleMarker(
+                [33.77724399936537, -118.30953000007615],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_1528055fcb8ff4064b4ec7ad484c9721 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_f913a7ad54bbe9aadacab8b9eedfc973 = $(`<div id="html_f913a7ad54bbe9aadacab8b9eedfc973" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90717.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_1528055fcb8ff4064b4ec7ad484c9721.setContent(html_f913a7ad54bbe9aadacab8b9eedfc973);
+            
+        
+
+        circle_marker_5a0d044a885ebac320d2d50bb3a0576f.bindPopup(popup_1528055fcb8ff4064b4ec7ad484c9721)
+        ;
+
+        
+    
+    
+            circle_marker_5a0d044a885ebac320d2d50bb3a0576f.bindTooltip(
+                `<div>
+                     Los Angeles               — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_13ef0c60f74c84b568e05079bb113228 = L.circleMarker(
+                [33.743447998943665, -118.28538199974983],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_774c77491624ee2a2061ee5e9fa78a38 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_0c30e8943f5c66275d9e59f1159b53c4 = $(`<div id="html_0c30e8943f5c66275d9e59f1159b53c4" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90731.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_774c77491624ee2a2061ee5e9fa78a38.setContent(html_0c30e8943f5c66275d9e59f1159b53c4);
+            
+        
+
+        circle_marker_13ef0c60f74c84b568e05079bb113228.bindPopup(popup_774c77491624ee2a2061ee5e9fa78a38)
+        ;
+
+        
+    
+    
+            circle_marker_13ef0c60f74c84b568e05079bb113228.bindTooltip(
+                `<div>
+                     Los Angeles               — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_955e0ab0477f90041e7fe9f9ebe3dbba = L.circleMarker(
+                [34.056946998900166, -118.19486500018223],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_c4b653fc3cdf5da8587552b0eaf0ccd4 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_3a2bb1be3326366123655450e49e0bc0 = $(`<div id="html_3a2bb1be3326366123655450e49e0bc0" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90033.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_c4b653fc3cdf5da8587552b0eaf0ccd4.setContent(html_3a2bb1be3326366123655450e49e0bc0);
+            
+        
+
+        circle_marker_955e0ab0477f90041e7fe9f9ebe3dbba.bindPopup(popup_c4b653fc3cdf5da8587552b0eaf0ccd4)
+        ;
+
+        
+    
+    
+            circle_marker_955e0ab0477f90041e7fe9f9ebe3dbba.bindTooltip(
+                `<div>
+                     Los Angeles               — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_73e0ac9b0afb6fd76bd69ad47f8ca730 = L.circleMarker(
+                [33.930079998777586, -118.25213800021633],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_31adcff4b91c8e074f791c218dbac36c = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_62e0a5acf63b40b3dde8f394c16cf62a = $(`<div id="html_62e0a5acf63b40b3dde8f394c16cf62a" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90059.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_31adcff4b91c8e074f791c218dbac36c.setContent(html_62e0a5acf63b40b3dde8f394c16cf62a);
+            
+        
+
+        circle_marker_73e0ac9b0afb6fd76bd69ad47f8ca730.bindPopup(popup_31adcff4b91c8e074f791c218dbac36c)
+        ;
+
+        
+    
+    
+            circle_marker_73e0ac9b0afb6fd76bd69ad47f8ca730.bindTooltip(
+                `<div>
+                     Los Angeles               — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_25958cb91fe894f525af12bc3be2d006 = L.circleMarker(
+                [33.74212899880884, -118.28332499968303],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_9c0eb38e9a32e211193cd5eda5d7bb9e = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_f2eeb3fe69773de5561a4d707208d419 = $(`<div id="html_f2eeb3fe69773de5561a4d707208d419" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90731.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_9c0eb38e9a32e211193cd5eda5d7bb9e.setContent(html_f2eeb3fe69773de5561a4d707208d419);
+            
+        
+
+        circle_marker_25958cb91fe894f525af12bc3be2d006.bindPopup(popup_9c0eb38e9a32e211193cd5eda5d7bb9e)
+        ;
+
+        
+    
+    
+            circle_marker_25958cb91fe894f525af12bc3be2d006.bindTooltip(
+                `<div>
+                     Los Angeles               — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6c9b15c79c0fcc400172c2c30d9ba0b8 = L.circleMarker(
+                [34.02212699900136, -118.20745199990724],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_783f14f6b595920c5ce706ce55dc6475 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_684bfb38b79796451c932811744863b0 = $(`<div id="html_684bfb38b79796451c932811744863b0" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90023.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_783f14f6b595920c5ce706ce55dc6475.setContent(html_684bfb38b79796451c932811744863b0);
+            
+        
+
+        circle_marker_6c9b15c79c0fcc400172c2c30d9ba0b8.bindPopup(popup_783f14f6b595920c5ce706ce55dc6475)
+        ;
+
+        
+    
+    
+            circle_marker_6c9b15c79c0fcc400172c2c30d9ba0b8.bindTooltip(
+                `<div>
+                     Los Angeles               — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_126a69d9c6af3f96e86dda97890058a1 = L.circleMarker(
+                [34.05979999940812, -118.19440999989757],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_30462f6d5bf58120710001129b809040 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_575b73c2a677a766e6bb426a96bcc2aa = $(`<div id="html_575b73c2a677a766e6bb426a96bcc2aa" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90033.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_30462f6d5bf58120710001129b809040.setContent(html_575b73c2a677a766e6bb426a96bcc2aa);
+            
+        
+
+        circle_marker_126a69d9c6af3f96e86dda97890058a1.bindPopup(popup_30462f6d5bf58120710001129b809040)
+        ;
+
+        
+    
+    
+            circle_marker_126a69d9c6af3f96e86dda97890058a1.bindTooltip(
+                `<div>
+                     Los Angeles               — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8c72203d06069657f7767b0248e6dba3 = L.circleMarker(
+                [38.66697899920608, -121.35533700012478],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_9dfa2daaaeb8c2dd8e60d4cc2af810ee = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_6c4858f61e0baf6aecc1b0622e59d79a = $(`<div id="html_6c4858f61e0baf6aecc1b0622e59d79a" style="width: 100.0%; height: 100.0%;"><b>County:</b> Sacramento               <br><b>ZIP:</b> 95842.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_9dfa2daaaeb8c2dd8e60d4cc2af810ee.setContent(html_6c4858f61e0baf6aecc1b0622e59d79a);
+            
+        
+
+        circle_marker_8c72203d06069657f7767b0248e6dba3.bindPopup(popup_9dfa2daaaeb8c2dd8e60d4cc2af810ee)
+        ;
+
+        
+    
+    
+            circle_marker_8c72203d06069657f7767b0248e6dba3.bindTooltip(
+                `<div>
+                     Sacramento                — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dc92d6d4a9977d6a28cdd42c3f5deba8 = L.circleMarker(
+                [34.17823099899134, -118.8487480001968],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_152d67b651f6510fff461acdff460adb = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_d00e08876d1b6fc70de32c5c23ac400e = $(`<div id="html_d00e08876d1b6fc70de32c5c23ac400e" style="width: 100.0%; height: 100.0%;"><b>County:</b> Ventura                  <br><b>ZIP:</b> 91362.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_152d67b651f6510fff461acdff460adb.setContent(html_d00e08876d1b6fc70de32c5c23ac400e);
+            
+        
+
+        circle_marker_dc92d6d4a9977d6a28cdd42c3f5deba8.bindPopup(popup_152d67b651f6510fff461acdff460adb)
+        ;
+
+        
+    
+    
+            circle_marker_dc92d6d4a9977d6a28cdd42c3f5deba8.bindTooltip(
+                `<div>
+                     Ventura                   — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5ead9b0a6f96cf8088e2daa461fb4e44 = L.circleMarker(
+                [32.582601999297275, -117.06206800029138],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_facf4304417f2e3da59dfad888358a1b = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_749994307a9f45ca643945ea4bdb8c10 = $(`<div id="html_749994307a9f45ca643945ea4bdb8c10" style="width: 100.0%; height: 100.0%;"><b>County:</b> San Diego                <br><b>ZIP:</b> 92154.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_facf4304417f2e3da59dfad888358a1b.setContent(html_749994307a9f45ca643945ea4bdb8c10);
+            
+        
+
+        circle_marker_5ead9b0a6f96cf8088e2daa461fb4e44.bindPopup(popup_facf4304417f2e3da59dfad888358a1b)
+        ;
+
+        
+    
+    
+            circle_marker_5ead9b0a6f96cf8088e2daa461fb4e44.bindTooltip(
+                `<div>
+                     San Diego                 — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b99e1a8e2e7dbd75597fc9a82c80f70c = L.circleMarker(
+                [37.99268099910702, -121.70952799955379],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_6e6d92fe3debfc503bbdee47360b7c7e = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_056376a9bc0d7ca8cbadf6dd80ff76d2 = $(`<div id="html_056376a9bc0d7ca8cbadf6dd80ff76d2" style="width: 100.0%; height: 100.0%;"><b>County:</b> Contra Costa             <br><b>ZIP:</b> 94561.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_6e6d92fe3debfc503bbdee47360b7c7e.setContent(html_056376a9bc0d7ca8cbadf6dd80ff76d2);
+            
+        
+
+        circle_marker_b99e1a8e2e7dbd75597fc9a82c80f70c.bindPopup(popup_6e6d92fe3debfc503bbdee47360b7c7e)
+        ;
+
+        
+    
+    
+            circle_marker_b99e1a8e2e7dbd75597fc9a82c80f70c.bindTooltip(
+                `<div>
+                     Contra Costa              — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0f6cfcb61e3f4b9a648e66bab68ab04d = L.circleMarker(
+                [34.20654799881352, -119.1665309998127],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_684e798bf168b14ac68f08fbeb9b5e82 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_a486346c3aa706161e595aca10bf5164 = $(`<div id="html_a486346c3aa706161e595aca10bf5164" style="width: 100.0%; height: 100.0%;"><b>County:</b> Ventura                  <br><b>ZIP:</b> 93030.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_684e798bf168b14ac68f08fbeb9b5e82.setContent(html_a486346c3aa706161e595aca10bf5164);
+            
+        
+
+        circle_marker_0f6cfcb61e3f4b9a648e66bab68ab04d.bindPopup(popup_684e798bf168b14ac68f08fbeb9b5e82)
+        ;
+
+        
+    
+    
+            circle_marker_0f6cfcb61e3f4b9a648e66bab68ab04d.bindTooltip(
+                `<div>
+                     Ventura                   — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4e854373b9c2e7bf391610b53f482751 = L.circleMarker(
+                [38.561420999278106, -121.5064449999919],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_e841636a62947f8755c0a84a1c122672 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_cad45c3f6563dfda86bf202c1aa7124e = $(`<div id="html_cad45c3f6563dfda86bf202c1aa7124e" style="width: 100.0%; height: 100.0%;"><b>County:</b> Sacramento               <br><b>ZIP:</b> 95818.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_e841636a62947f8755c0a84a1c122672.setContent(html_cad45c3f6563dfda86bf202c1aa7124e);
+            
+        
+
+        circle_marker_4e854373b9c2e7bf391610b53f482751.bindPopup(popup_e841636a62947f8755c0a84a1c122672)
+        ;
+
+        
+    
+    
+            circle_marker_4e854373b9c2e7bf391610b53f482751.bindTooltip(
+                `<div>
+                     Sacramento                — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e9c052b2aeb0297da06ac9f91dfa3450 = L.circleMarker(
+                [33.8514059990204, -118.1819019998153],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_780677e289e9b4eaa1200c91257f172d = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_9578cf34664f9885aa85b978d60676f2 = $(`<div id="html_9578cf34664f9885aa85b978d60676f2" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90805.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_780677e289e9b4eaa1200c91257f172d.setContent(html_9578cf34664f9885aa85b978d60676f2);
+            
+        
+
+        circle_marker_e9c052b2aeb0297da06ac9f91dfa3450.bindPopup(popup_780677e289e9b4eaa1200c91257f172d)
+        ;
+
+        
+    
+    
+            circle_marker_e9c052b2aeb0297da06ac9f91dfa3450.bindTooltip(
+                `<div>
+                     Los Angeles               — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c3255ab6928745d4de5abc14bc6b878c = L.circleMarker(
+                [33.99208899943692, -118.40972899955517],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_02c54f56f184d638613155984fd5cebe = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_9fb36f37c0d224a8b42873d47779f66a = $(`<div id="html_9fb36f37c0d224a8b42873d47779f66a" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90230.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_02c54f56f184d638613155984fd5cebe.setContent(html_9fb36f37c0d224a8b42873d47779f66a);
+            
+        
+
+        circle_marker_c3255ab6928745d4de5abc14bc6b878c.bindPopup(popup_02c54f56f184d638613155984fd5cebe)
+        ;
+
+        
+    
+    
+            circle_marker_c3255ab6928745d4de5abc14bc6b878c.bindTooltip(
+                `<div>
+                     Los Angeles               — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bbb2eb00fec1d1593576e6b9737668d6 = L.circleMarker(
+                [38.55818199884, -121.5129440002554],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_2f0d9f0280aba24dcfbf7b563dd7968d = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_ef8ac546171c2c66fccd2a8f0d3f775c = $(`<div id="html_ef8ac546171c2c66fccd2a8f0d3f775c" style="width: 100.0%; height: 100.0%;"><b>County:</b> Sacramento               <br><b>ZIP:</b> 95818.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_2f0d9f0280aba24dcfbf7b563dd7968d.setContent(html_ef8ac546171c2c66fccd2a8f0d3f775c);
+            
+        
+
+        circle_marker_bbb2eb00fec1d1593576e6b9737668d6.bindPopup(popup_2f0d9f0280aba24dcfbf7b563dd7968d)
+        ;
+
+        
+    
+    
+            circle_marker_bbb2eb00fec1d1593576e6b9737668d6.bindTooltip(
+                `<div>
+                     Sacramento                — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9d963a52b79123ff5d22d5b0b44d6d94 = L.circleMarker(
+                [34.28015299947707, -119.28526999965727],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_f14fb57daf4a1e40484a90570f6e2da0 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_a1c534ad6c7cf3131b6d9a48b508a2a3 = $(`<div id="html_a1c534ad6c7cf3131b6d9a48b508a2a3" style="width: 100.0%; height: 100.0%;"><b>County:</b> Ventura                  <br><b>ZIP:</b> 93001.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_f14fb57daf4a1e40484a90570f6e2da0.setContent(html_a1c534ad6c7cf3131b6d9a48b508a2a3);
+            
+        
+
+        circle_marker_9d963a52b79123ff5d22d5b0b44d6d94.bindPopup(popup_f14fb57daf4a1e40484a90570f6e2da0)
+        ;
+
+        
+    
+    
+            circle_marker_9d963a52b79123ff5d22d5b0b44d6d94.bindTooltip(
+                `<div>
+                     Ventura                   — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c104e279ddbbcc36596c782ea6a4ac4b = L.circleMarker(
+                [33.99384799887165, -118.24482499964296],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_54a8959acedd8f7fca3d784eed5d5627 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_2c538d789c0bfb31812fc41356af7920 = $(`<div id="html_2c538d789c0bfb31812fc41356af7920" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90058.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_54a8959acedd8f7fca3d784eed5d5627.setContent(html_2c538d789c0bfb31812fc41356af7920);
+            
+        
+
+        circle_marker_c104e279ddbbcc36596c782ea6a4ac4b.bindPopup(popup_54a8959acedd8f7fca3d784eed5d5627)
+        ;
+
+        
+    
+    
+            circle_marker_c104e279ddbbcc36596c782ea6a4ac4b.bindTooltip(
+                `<div>
+                     Los Angeles               — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c1587b7acc7e71129ac191292b3cc520 = L.circleMarker(
+                [33.996067999101605, -118.24060500010243],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_51d6d11bc4bcac1fddf9e29ba573a83c = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_cf2db554ec6a909e2e48517e39ee86b6 = $(`<div id="html_cf2db554ec6a909e2e48517e39ee86b6" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90058.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_51d6d11bc4bcac1fddf9e29ba573a83c.setContent(html_cf2db554ec6a909e2e48517e39ee86b6);
+            
+        
+
+        circle_marker_c1587b7acc7e71129ac191292b3cc520.bindPopup(popup_51d6d11bc4bcac1fddf9e29ba573a83c)
+        ;
+
+        
+    
+    
+            circle_marker_c1587b7acc7e71129ac191292b3cc520.bindTooltip(
+                `<div>
+                     Los Angeles               — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_61294ee4f7fe7301148a033e1cbeca4b = L.circleMarker(
+                [37.75916499876212, -122.19810599979814],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_1f9828cd037b0921de8e3ec2a47609c7 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_c3119400f246ed69653576aec58e97bd = $(`<div id="html_c3119400f246ed69653576aec58e97bd" style="width: 100.0%; height: 100.0%;"><b>County:</b> Alameda                  <br><b>ZIP:</b> 94621.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_1f9828cd037b0921de8e3ec2a47609c7.setContent(html_c3119400f246ed69653576aec58e97bd);
+            
+        
+
+        circle_marker_61294ee4f7fe7301148a033e1cbeca4b.bindPopup(popup_1f9828cd037b0921de8e3ec2a47609c7)
+        ;
+
+        
+    
+    
+            circle_marker_61294ee4f7fe7301148a033e1cbeca4b.bindTooltip(
+                `<div>
+                     Alameda                   — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_63018545a13623ae9b4d810be26589b3 = L.circleMarker(
+                [38.56424099895608, -121.50288400005222],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_0513799769c21e5fa8ed6f57de687485 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_c2b1ddaaeebd5339e78b702beb259100 = $(`<div id="html_c2b1ddaaeebd5339e78b702beb259100" style="width: 100.0%; height: 100.0%;"><b>County:</b> Sacramento               <br><b>ZIP:</b> 95818.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_0513799769c21e5fa8ed6f57de687485.setContent(html_c2b1ddaaeebd5339e78b702beb259100);
+            
+        
+
+        circle_marker_63018545a13623ae9b4d810be26589b3.bindPopup(popup_0513799769c21e5fa8ed6f57de687485)
+        ;
+
+        
+    
+    
+            circle_marker_63018545a13623ae9b4d810be26589b3.bindTooltip(
+                `<div>
+                     Sacramento                — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fad1436671b7a51c70cefa4b6f6315e7 = L.circleMarker(
+                [33.9309809994168, -118.249360999551],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_be3b1daa948378fb7ff3f0f01c5a0d57 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_dccb61d1bc559c1576855397db63200f = $(`<div id="html_dccb61d1bc559c1576855397db63200f" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90059.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_be3b1daa948378fb7ff3f0f01c5a0d57.setContent(html_dccb61d1bc559c1576855397db63200f);
+            
+        
+
+        circle_marker_fad1436671b7a51c70cefa4b6f6315e7.bindPopup(popup_be3b1daa948378fb7ff3f0f01c5a0d57)
+        ;
+
+        
+    
+    
+            circle_marker_fad1436671b7a51c70cefa4b6f6315e7.bindTooltip(
+                `<div>
+                     Los Angeles               — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1b77a3a94d80b4d921369d9b7e3c53cd = L.circleMarker(
+                [33.99227599928215, -118.40942200030683],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_7ce43c12e0f692a6547dfc9b3bc917d9 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_377f34550b11b1845673394b88263f6c = $(`<div id="html_377f34550b11b1845673394b88263f6c" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90230.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_7ce43c12e0f692a6547dfc9b3bc917d9.setContent(html_377f34550b11b1845673394b88263f6c);
+            
+        
+
+        circle_marker_1b77a3a94d80b4d921369d9b7e3c53cd.bindPopup(popup_7ce43c12e0f692a6547dfc9b3bc917d9)
+        ;
+
+        
+    
+    
+            circle_marker_1b77a3a94d80b4d921369d9b7e3c53cd.bindTooltip(
+                `<div>
+                     Los Angeles               — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_434a8a7e22bee0e2b8a311fe22653d5c = L.circleMarker(
+                [33.93363399887524, -118.25030100025756],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_b84be334f7b64edaa28cc7db64164624 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_6f3fe091fed4823f00179de2ecd5dce8 = $(`<div id="html_6f3fe091fed4823f00179de2ecd5dce8" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90059.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_b84be334f7b64edaa28cc7db64164624.setContent(html_6f3fe091fed4823f00179de2ecd5dce8);
+            
+        
+
+        circle_marker_434a8a7e22bee0e2b8a311fe22653d5c.bindPopup(popup_b84be334f7b64edaa28cc7db64164624)
+        ;
+
+        
+    
+    
+            circle_marker_434a8a7e22bee0e2b8a311fe22653d5c.bindTooltip(
+                `<div>
+                     Los Angeles               — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_35dacf947486367bee3e1a71f6533928 = L.circleMarker(
+                [37.76174299887277, -122.19609800013515],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_8de1fe0c733a302e19671408a628d7f3 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_13a91ec8d2a81b28481e7ee5b6da64e3 = $(`<div id="html_13a91ec8d2a81b28481e7ee5b6da64e3" style="width: 100.0%; height: 100.0%;"><b>County:</b> Alameda                  <br><b>ZIP:</b> 94621.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_8de1fe0c733a302e19671408a628d7f3.setContent(html_13a91ec8d2a81b28481e7ee5b6da64e3);
+            
+        
+
+        circle_marker_35dacf947486367bee3e1a71f6533928.bindPopup(popup_8de1fe0c733a302e19671408a628d7f3)
+        ;
+
+        
+    
+    
+            circle_marker_35dacf947486367bee3e1a71f6533928.bindTooltip(
+                `<div>
+                     Alameda                   — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e3ec5c833a09cbb6a9b0961fb0751ea2 = L.circleMarker(
+                [33.93138199901276, -118.24943500006914],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_6116e3eb64bac347c5bd33dd0ff9639d = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_28fddfdba989a2b503138f68cd4a68d2 = $(`<div id="html_28fddfdba989a2b503138f68cd4a68d2" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90059.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_6116e3eb64bac347c5bd33dd0ff9639d.setContent(html_28fddfdba989a2b503138f68cd4a68d2);
+            
+        
+
+        circle_marker_e3ec5c833a09cbb6a9b0961fb0751ea2.bindPopup(popup_6116e3eb64bac347c5bd33dd0ff9639d)
+        ;
+
+        
+    
+    
+            circle_marker_e3ec5c833a09cbb6a9b0961fb0751ea2.bindTooltip(
+                `<div>
+                     Los Angeles               — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_591a6cd2887cbcc551cf82171c008ccc = L.circleMarker(
+                [33.995847999246074, -118.41189000027735],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_fc9a15a995a14df0d8869d7af4e9b19a = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_7caff0f62955523b8046389b1039b630 = $(`<div id="html_7caff0f62955523b8046389b1039b630" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90230.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_fc9a15a995a14df0d8869d7af4e9b19a.setContent(html_7caff0f62955523b8046389b1039b630);
+            
+        
+
+        circle_marker_591a6cd2887cbcc551cf82171c008ccc.bindPopup(popup_fc9a15a995a14df0d8869d7af4e9b19a)
+        ;
+
+        
+    
+    
+            circle_marker_591a6cd2887cbcc551cf82171c008ccc.bindTooltip(
+                `<div>
+                     Los Angeles               — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dbe1e569f5a2614e6518825541fae919 = L.circleMarker(
+                [34.05935599887669, -118.19353000036376],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_25a36d5347e5ff7065f504f21d0df80b = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_d80dff4daaf4b0e3d660b5168fef702b = $(`<div id="html_d80dff4daaf4b0e3d660b5168fef702b" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90033.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_25a36d5347e5ff7065f504f21d0df80b.setContent(html_d80dff4daaf4b0e3d660b5168fef702b);
+            
+        
+
+        circle_marker_dbe1e569f5a2614e6518825541fae919.bindPopup(popup_25a36d5347e5ff7065f504f21d0df80b)
+        ;
+
+        
+    
+    
+            circle_marker_dbe1e569f5a2614e6518825541fae919.bindTooltip(
+                `<div>
+                     Los Angeles               — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_88295114ce09c7328e66ba967b37d1ae = L.circleMarker(
+                [37.76022299896873, -122.19637299959645],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_21c11e7b991a3e5b0846bd690dc06e02 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_4a291420e8d0c11f7af04ed13d04142a = $(`<div id="html_4a291420e8d0c11f7af04ed13d04142a" style="width: 100.0%; height: 100.0%;"><b>County:</b> Alameda                  <br><b>ZIP:</b> 94621.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_21c11e7b991a3e5b0846bd690dc06e02.setContent(html_4a291420e8d0c11f7af04ed13d04142a);
+            
+        
+
+        circle_marker_88295114ce09c7328e66ba967b37d1ae.bindPopup(popup_21c11e7b991a3e5b0846bd690dc06e02)
+        ;
+
+        
+    
+    
+            circle_marker_88295114ce09c7328e66ba967b37d1ae.bindTooltip(
+                `<div>
+                     Alameda                   — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_595311e67ed23cb3ce93fad5f3c2cef9 = L.circleMarker(
+                [36.736108999240784, -119.7202110001503],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_f5d5b348438e090f95eb3d12dc5d1886 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_6b7b7fa6d0d782118d10d68c407e3fdf = $(`<div id="html_6b7b7fa6d0d782118d10d68c407e3fdf" style="width: 100.0%; height: 100.0%;"><b>County:</b> Fresno                   <br><b>ZIP:</b> 93727.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_f5d5b348438e090f95eb3d12dc5d1886.setContent(html_6b7b7fa6d0d782118d10d68c407e3fdf);
+            
+        
+
+        circle_marker_595311e67ed23cb3ce93fad5f3c2cef9.bindPopup(popup_f5d5b348438e090f95eb3d12dc5d1886)
+        ;
+
+        
+    
+    
+            circle_marker_595311e67ed23cb3ce93fad5f3c2cef9.bindTooltip(
+                `<div>
+                     Fresno                    — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4b0e67dfa297912b63119550b5eb11fa = L.circleMarker(
+                [33.931037999403856, -118.25065000023702],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_ff8e878a632c50852e38fd1169f41d17 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_96e5ce67bc0cdf6ec077a4cbd8c1617b = $(`<div id="html_96e5ce67bc0cdf6ec077a4cbd8c1617b" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90059.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_ff8e878a632c50852e38fd1169f41d17.setContent(html_96e5ce67bc0cdf6ec077a4cbd8c1617b);
+            
+        
+
+        circle_marker_4b0e67dfa297912b63119550b5eb11fa.bindPopup(popup_ff8e878a632c50852e38fd1169f41d17)
+        ;
+
+        
+    
+    
+            circle_marker_4b0e67dfa297912b63119550b5eb11fa.bindTooltip(
+                `<div>
+                     Los Angeles               — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8d41ec401284fd061f3a75a587a15c37 = L.circleMarker(
+                [33.930954998913144, -118.2487689998973],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_26d4748f3f6af21e15c4a13892327b6c = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_9584596b0fda4025ef15cac4d824512a = $(`<div id="html_9584596b0fda4025ef15cac4d824512a" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90059.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_26d4748f3f6af21e15c4a13892327b6c.setContent(html_9584596b0fda4025ef15cac4d824512a);
+            
+        
+
+        circle_marker_8d41ec401284fd061f3a75a587a15c37.bindPopup(popup_26d4748f3f6af21e15c4a13892327b6c)
+        ;
+
+        
+    
+    
+            circle_marker_8d41ec401284fd061f3a75a587a15c37.bindTooltip(
+                `<div>
+                     Los Angeles               — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9a158c604fdc2bb119ea93111bb30acf = L.circleMarker(
+                [33.9956899991202, -118.41200200043036],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_d08f611cf26c89f2b89f5b4ca6a3c3b6 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_e3c89f06c6f7fb956aeb985cedc8e824 = $(`<div id="html_e3c89f06c6f7fb956aeb985cedc8e824" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90230.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_d08f611cf26c89f2b89f5b4ca6a3c3b6.setContent(html_e3c89f06c6f7fb956aeb985cedc8e824);
+            
+        
+
+        circle_marker_9a158c604fdc2bb119ea93111bb30acf.bindPopup(popup_d08f611cf26c89f2b89f5b4ca6a3c3b6)
+        ;
+
+        
+    
+    
+            circle_marker_9a158c604fdc2bb119ea93111bb30acf.bindTooltip(
+                `<div>
+                     Los Angeles               — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a3a9143dfa7c400b5b9514e856beea7d = L.circleMarker(
+                [37.923281999381544, -122.3455170001815],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_bac2403db8559a4b7d7192df24026639 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_cfe816e9836a35b33d005997b198b704 = $(`<div id="html_cfe816e9836a35b33d005997b198b704" style="width: 100.0%; height: 100.0%;"><b>County:</b> Contra Costa             <br><b>ZIP:</b> 94804.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_bac2403db8559a4b7d7192df24026639.setContent(html_cfe816e9836a35b33d005997b198b704);
+            
+        
+
+        circle_marker_a3a9143dfa7c400b5b9514e856beea7d.bindPopup(popup_bac2403db8559a4b7d7192df24026639)
+        ;
+
+        
+    
+    
+            circle_marker_a3a9143dfa7c400b5b9514e856beea7d.bindTooltip(
+                `<div>
+                     Contra Costa              — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a992f672c579042e7d9daf92deb5865a = L.circleMarker(
+                [32.70157099913408, -117.12279000011216],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_548d2a912adfe2817e317c34ab4f2159 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_40c2e8c08a5fb3a12773e7e7f0264879 = $(`<div id="html_40c2e8c08a5fb3a12773e7e7f0264879" style="width: 100.0%; height: 100.0%;"><b>County:</b> San Diego                <br><b>ZIP:</b> 92113.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_548d2a912adfe2817e317c34ab4f2159.setContent(html_40c2e8c08a5fb3a12773e7e7f0264879);
+            
+        
+
+        circle_marker_a992f672c579042e7d9daf92deb5865a.bindPopup(popup_548d2a912adfe2817e317c34ab4f2159)
+        ;
+
+        
+    
+    
+            circle_marker_a992f672c579042e7d9daf92deb5865a.bindTooltip(
+                `<div>
+                     San Diego                 — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0c5bdb46954b7e40678992487a7bd7b1 = L.circleMarker(
+                [33.778857999382296, -118.31072599997745],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_7fcd5239c01cb13ea3bf3405a53e657b = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_d0c959a98d13ca02681aa9a3108e7a91 = $(`<div id="html_d0c959a98d13ca02681aa9a3108e7a91" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90717.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_7fcd5239c01cb13ea3bf3405a53e657b.setContent(html_d0c959a98d13ca02681aa9a3108e7a91);
+            
+        
+
+        circle_marker_0c5bdb46954b7e40678992487a7bd7b1.bindPopup(popup_7fcd5239c01cb13ea3bf3405a53e657b)
+        ;
+
+        
+    
+    
+            circle_marker_0c5bdb46954b7e40678992487a7bd7b1.bindTooltip(
+                `<div>
+                     Los Angeles               — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b36dbe3d60fcf0f612bb9e37ae1cf3aa = L.circleMarker(
+                [33.94806599911734, -118.23526099973232],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_fa6a01e3deb9251d0c84c9f2039ed1a6 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_cb011c275645f22becba8f05ceada668 = $(`<div id="html_cb011c275645f22becba8f05ceada668" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90002.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_fa6a01e3deb9251d0c84c9f2039ed1a6.setContent(html_cb011c275645f22becba8f05ceada668);
+            
+        
+
+        circle_marker_b36dbe3d60fcf0f612bb9e37ae1cf3aa.bindPopup(popup_fa6a01e3deb9251d0c84c9f2039ed1a6)
+        ;
+
+        
+    
+    
+            circle_marker_b36dbe3d60fcf0f612bb9e37ae1cf3aa.bindTooltip(
+                `<div>
+                     Los Angeles               — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c2372149715d1734f98dfc400e195a7a = L.circleMarker(
+                [33.99387799905004, -118.24495799971235],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+    
+        var popup_e11171dd57940b9826bb42c244fdd6a1 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_88ffd3a07991a40a13ec299fbb042454 = $(`<div id="html_88ffd3a07991a40a13ec299fbb042454" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles              <br><b>ZIP:</b> 90058.0<br><b>Total Units:</b> 8</div>`)[0];
+                popup_e11171dd57940b9826bb42c244fdd6a1.setContent(html_88ffd3a07991a40a13ec299fbb042454);
+            
+        
+
+        circle_marker_c2372149715d1734f98dfc400e195a7a.bindPopup(popup_e11171dd57940b9826bb42c244fdd6a1)
+        ;
+
+        
+    
+    
+            circle_marker_c2372149715d1734f98dfc400e195a7a.bindTooltip(
+                `<div>
+                     Los Angeles               — 8 units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            tile_layer_4b7f133b3ad90b3d550587e2833f2b09.addTo(map_cfbe5e2f2ad8d2e7aad8507a100c9089);
+        
+</script>
+</html>
